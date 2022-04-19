@@ -8,6 +8,7 @@ public class rocksssicorspapars {
 		// scanner, random를 써서 사용자가 0이면 가위, 1이면 바위, 보는 2
 		// 반복문은 쓰면 안됨
 		// 컴퓨터와 가위, 바위, 보 해서 승리/패배 출력
+		System.out.println("가위, 바위, 보");
 		int computer = (int) (Math.random() * 3) + 1;
 		Scanner sc = new Scanner(System.in);
 		String me = sc.nextLine();
