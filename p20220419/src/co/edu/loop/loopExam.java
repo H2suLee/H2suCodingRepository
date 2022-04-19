@@ -58,7 +58,7 @@ public class loopExam {
 //				System.out.println(i + "*" + j + "=" + (i * j));
 //			}
 //		}
-		// 별찍기 i는 줄 넘버, j는 * 갯수(?) 
+		// 별찍기 i는 줄 넘버, j는 * 갯수(?)
 		// *
 		// **
 		// ***
@@ -70,52 +70,45 @@ public class loopExam {
 			}
 			System.out.println();
 		}
-		
-		// 별찍기 i는 줄 넘버, j는 *갯수(?) 
+
+		// 별찍기 i는 줄 넘버, j는 *갯수(?)
 		// *****
 		// ****
 		// ***
 		// **
 		// *
-		for(int i =0; i<=5; i++) {
-			for(int j=5; j>0; j--) {
-				if(i<j) {
-					System.out.print(" ");
-				}
-				else {
-					System.out.print("*");
-				}
+		for (int i = 1; i < 6; i++) {
+			for (int j = 5; j >= i; j--) {
+				System.out.print("*");
 			}
 			System.out.println();
-		
-			// 별찍기 i는 줄 넘버, j는 *갯수(?) 
-			//     *
-			//    **
-			//   ***
-			//  ****
-			// *****			
-			
-			for(int k=4; k>=0;k--) {
-				for(int j=0;j<5;j++) {
-					if(k>j)
+		}
+
+		// 별찍기 i는 줄 넘버, j는 *갯수(?)
+		// *
+		// **
+		// ***
+		// ****
+		// *****
+
+		for (int k = 4; k >= 0; k--) {
+			for (int j = 0; j < 5; j++) {
+				if (k > j)
 					System.out.print(" ");
-					else
+				else
 					System.out.print("*");
-				}
-				System.out.println();
-			}			
+			}
+			System.out.println();
+		}
 
-
-			
-		// 별찍기 i는 줄 넘버, j는 *갯수(?) 
-		//   *
-		//  ***
+		// 별찍기 i는 줄 넘버, j는 *갯수(?)
+		// *
+		// ***
 		// *****
-			
-		// *****
-		//  ***
-		//   * 
 
-}
-}
+		// *****
+		// ***
+		// *
+
+	}
 }
