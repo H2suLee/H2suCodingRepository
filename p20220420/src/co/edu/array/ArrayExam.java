@@ -16,6 +16,8 @@ public class ArrayExam {
 		ary[2] = 3;
 		ary[3] = 4;
 		ary[4] = 5;
+		
+		pu
 
 		// 2)
 		int[] ary1 = { 1, 2, 3, 4, 5 };
