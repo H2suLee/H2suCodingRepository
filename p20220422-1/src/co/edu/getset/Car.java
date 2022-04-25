@@ -17,8 +17,6 @@ public class Car {
 	
 	// 그치만 getter setter를 활용할 거기 때문에 위 필드들을 private로 바꾸고 
 	// getter and setter 메소드 써 보기
-	// getter setter쓰는 이유 들어오는 데이터가 유효한 지 안 한 지 알 수 있음
-	// getter setter에서는 설정한 다섯 필드에 대해 다 메소드가 생김
 	
 	public String getCompany() { // getter
 		return company;
@@ -45,7 +43,6 @@ public class Car {
 	}
 	public void setSpeed(int speed) {
 		// 속도를 음수로 입력하는 상황을 방지화하기 위해 데이터 입력 제한
-		// 주로 if문을 이용하여 제한을 검
 		if(speed < 0) {
 			speed = 0;
 		}
