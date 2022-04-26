@@ -17,7 +17,7 @@ public class Human {
 
 	// 메소드
 	public void getInformation() {
-		System.out.println(name + "님의 신장 " + height + ", 몸무게 " + weight);
+		System.out.print(name + "님의 신장 " + height + ", 몸무게 " + weight); // 여기는 printf라고 하고
 	}
 
 }

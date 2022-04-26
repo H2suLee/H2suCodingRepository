@@ -8,7 +8,7 @@ public interface RemoteControl1 {
 	
 	
 	// 추상 메소드
-	public abstract void turnOn(); // 실행 블럭 ({})이 필요 없음
+	public abstract void turnOn(); // 추상메소드는 실행 블럭 ({})이 필요 없음
 	void turnOff(); // 앞에 리턴값, 추상 선언을 안 해주어도 컴파일 하면 public abstract void turnOff 로 java가 자동으로 바꿔 줌
 	
 	public void setVolume(int volume);

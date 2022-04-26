@@ -17,7 +17,7 @@ public class ObesityInfo extends StandardWeightInfo {
 	@Override
 	public void getInformation() {
 		if(getObesity() >= 120) {
-			System.out.println(name + "님의 신장 " +height+", 몸무게 " + weight + ", 비만입니다.");
+			System.out.println(name + "님의 신장 " +height+", 몸무게 " + weight + ", 비만입니다."); 
 		} else {
 		}
 	}

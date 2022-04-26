@@ -14,13 +14,15 @@ public class StandardWeightInfo extends Human {
 //	(2) public double getStandardWeight() : 표준체중을 구하는 기능
 //	( * 표준 체중 : (Height - 100) * 0.9 )
 
-	public double getSWeight() {
+	public double getSWeight() { // 접근 제한자가 private이라도 상관 없음
 		return (height - 100) * 0.9;
 	}
 
 	@Override
 	public void getInformation() {
-		System.out.println(name + "님의 신장 " + height + ", 몸무게 " + weight + ", 표준체중" + getSWeight() + "입니다.");
+		super.getInformation(); // 이렇게 부모클래스의 메소드 호출하고,
+//		System.out.println(name + "님의 신장 " + height + ", 몸무게 " + weight + ", 표준체중" + getSWeight() + "입니다."); //
+		System.out.printf(", 표준체중 %.1f 입니다\n", getSWeight()); // 여기는 printf로 하고 소수점 자리 지정하기
 	}
 }
 //홍길동님의 신장 168, 몸무게 45, 표준체중 61.2 입니다.

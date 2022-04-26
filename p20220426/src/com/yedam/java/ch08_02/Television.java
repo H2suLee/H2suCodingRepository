@@ -1,8 +1,8 @@
-package com.yedam.java.ch08_01;
+package com.yedam.java.ch08_02;
 
 // 인터페이스 구현, 구현 클래스
 
-public class Television implements RemoteControl1 {
+public class Television implements RemoteControl {
 
 	private int volume;
 
@@ -21,11 +21,11 @@ public class Television implements RemoteControl1 {
 
 	@Override
 	public void setVolume(int volume) {
-		if (volume >= RemoteControl1.MAX_VOLUME) {
-			this.volume = RemoteControl1.MAX_VOLUME;
+		if (volume >= RemoteControl.MAX_VOLUME) {
+			this.volume = RemoteControl.MAX_VOLUME;
 
-		} else if (volume <= RemoteControl1.MIN_VOLUME) {
-			this.volume = RemoteControl1.MIN_VOLUME;
+		} else if (volume <= RemoteControl.MIN_VOLUME) {
+			this.volume = RemoteControl.MIN_VOLUME;
 		} else {
 			this.volume = volume;
 		}
