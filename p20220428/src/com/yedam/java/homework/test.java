@@ -2,7 +2,8 @@ package com.yedam.java.homework;
 
 import java.util.Scanner;
 
-public class Question2 {
+public class test {
+
 	public static void main(String[] args) {
 		int answer = (int) (Math.random() * 100) + 1;
 		System.out.println(answer); //
@@ -17,37 +18,32 @@ public class Question2 {
 			// 사용자가 숫자를 입력
 			Scanner sc = new Scanner(System.in);
 			System.out.println("1과 100 사이의 값을 입력하세요 : ");
-			try {
-				input = Integer.parseInt(sc.nextLine());
+			input = Integer.parseInt(sc.nextLine());
 
 //			catch (NumberFormatException e) {
 //				System.out.println("유효값 입력");
 //				continue;
 //			}
-				// 18 ~ 25라인이 아래로 표현될 수 있음 스캐너 선언과 동시에 input에 값 넣기
+			// 18 ~ 25라인이 아래로 표현될 수 있음 스캐너 선언과 동시에 input에 값 넣기
 //			try {
 //				input = new Scanner(System.in).nextInt();
 //			} catch(NumberFormatException e) {
 //				System.out.println("유효하지 않은 값입니다. 다시 값을 입력해 주세요");
 //			}
 
-				// 세 가지 경우의 수 설정
+			// 세 가지 경우의 수 설정
 
-				if (answer > input) {
-					System.out.println("더 큰 값을 입력하세요.");
-				} else if (answer < input) {
-					System.out.println("더 작은 값을 입력하세요.");
-				} else if (answer == input) {
-					System.out.println("맞혔습니다.");
-					break;
-				}
-
-			} catch (NumberFormatException e) { // catch문
-				System.out.println("유효값 입력");
-//				continue;
+			if (answer > input) {
+				System.out.println("더 큰 값을 입력하세요.");
+			} else if (answer < input) {
+				System.out.println("더 작은 값을 입력하세요.");
+			} else if (answer == input) {
+				System.out.println("맞혔습니다.");
+				break;
 			}
+//				continue;
 		} while (true);
 		System.out.println("시도 횟수 : " + count); // 마지막 else if문 블록에 시도 회수 출력 메소드 넣어도 됨
-	}
 
+	}
 }

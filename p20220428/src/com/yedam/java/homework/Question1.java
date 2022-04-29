@@ -12,7 +12,7 @@ public class Question1 {
             } catch(ArrayIndexOutOfBoundsException e){
             	System.out.println("ArrayIndexOutOfBoundsException가 발생하였습니다. 반복문 등호 수정");
             } catch(NumberFormatException e) {
-            	System.out.println("NumberFormatException이 발생하였습니다. 숫자 형식에 맞게 필드값 수정");
+            	System.out.println("NumberFormatException이 발생하였습니다. 인덱스 범위를 벗어났습니다.");
             } finally {
             	System.out.println(value);
             }
